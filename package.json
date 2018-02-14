@@ -19,9 +19,13 @@
   },
   "homepage": "https://github.com/YSOUZAS/cpu-z-electron#readme",
   "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "electron": "^1.8.2",
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
-  }
+    "eslint-plugin-import": "^2.8.0",
+    "jquery": "^3.3.1",
+    "tether": "^1.4.3"
+  },
+  "dependencies": {}
 }

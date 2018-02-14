@@ -8,6 +8,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 600,
     height: 400,
+    /*
     nodeIntegration: false,
     contextIsolation: true,
     fullscreenable: false,
@@ -15,6 +16,8 @@ app.on('ready', () => {
     webPreferences: {
       backgroundThrottling: false,
       devTools: false,
-    },
+    }, */
   });
+
+  mainWindow.loadURL(`file://${__dirname}/app/windows/index.html`);
 });
