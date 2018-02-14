@@ -7,17 +7,15 @@ let mainWindow = null;
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 600,
-    height: 400,
-    /*
+    height: 600,
     nodeIntegration: false,
     contextIsolation: true,
-    fullscreenable: false,
+    fullscreenable: true,
     resizable: false,
     webPreferences: {
-      backgroundThrottling: false,
-      devTools: false,
-    }, */
+      backgroundThrottling: true,
+      devTools: true,
+    },
   });
-
   mainWindow.loadURL(`file://${__dirname}/app/windows/index.html`);
 });
