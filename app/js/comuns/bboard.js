@@ -1,14 +1,14 @@
 const input = require('./input');
 
-const system = () => ({
+const bboard = () => ({
   data: (si) => {
-    si.system()
+    si.baseboard()
       .then((data) => {
         const keys = Object.keys(data);
-        keys.map(key => input.input('system', key, data[key]));
+        keys.map(key => input.input('bboard', key, data[key]));
       })
       .catch(error => console.error(error));
   },
 });
 
-module.exports = system;
+module.exports = bboard;

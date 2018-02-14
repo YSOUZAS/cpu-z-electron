@@ -5,9 +5,7 @@ const cpu = () => ({
     si.cpu()
       .then((data) => {
         const keys = Object.keys(data);
-        keys.map((key) => {
-          input.input(key, data[key]);
-        });
+        keys.map(key => input.input('cpu', key, data[key]));
       })
       .catch(error => console.error(error));
   },

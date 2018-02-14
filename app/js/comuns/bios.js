@@ -1,14 +1,14 @@
 const input = require('./input');
 
-const system = () => ({
+const bios = () => ({
   data: (si) => {
-    si.system()
+    si.bios()
       .then((data) => {
         const keys = Object.keys(data);
-        keys.map(key => input.input('system', key, data[key]));
+        keys.map(key => input.input('bios', key, data[key]));
       })
       .catch(error => console.error(error));
   },
 });
 
-module.exports = system;
+module.exports = bios;
