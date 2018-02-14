@@ -4,7 +4,6 @@ const {
 
 let mainWindow = null;
 
-
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 600,
