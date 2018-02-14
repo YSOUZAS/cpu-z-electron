@@ -1,3 +1,13 @@
 .content {
-    padding-top: 5px;
+    margin: 10px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.double {
+    border-style: double;
 }

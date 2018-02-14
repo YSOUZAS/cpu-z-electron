@@ -6,8 +6,8 @@ let mainWindow = null;
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    width: 600,
-    height: 600,
+    width: 650,
+    height: 700,
     nodeIntegration: false,
     contextIsolation: true,
     fullscreenable: true,
