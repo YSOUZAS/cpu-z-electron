@@ -12,10 +12,11 @@ app.on('ready', () => {
     contextIsolation: true,
     fullscreenable: true,
     resizable: false,
+    frame: true,
     webPreferences: {
       backgroundThrottling: true,
       devTools: true,
     },
   });
-  mainWindow.loadURL(`file://${__dirname}/app/windows/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/app/index.html`);
 });
